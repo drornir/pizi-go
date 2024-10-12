@@ -7,6 +7,10 @@ import (
 )
 
 func main() {
-	app := app.App{}
+	app := newApp()
 	fmt.Println(app)
+}
+
+func newApp() app.App {
+	return app.App{}
 }
