@@ -1,0 +1,21 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.13.4/.schema/devbox.schema.json",
+  "packages": {
+    "direnv": "latest",
+    "go": "1",
+    "gnumake": "latest",
+    "coreutils-full": "latest",
+    "temporal-cli": "1",
+    "temporal": "1",
+    "gofumpt": "latest",
+    "sqlc": "latest",
+    "go-task": {
+      "version": "3.37",
+      "patch": "never"
+    }
+  },
+  "shell": {
+    "init_hook": [],
+    "scripts": {}
+  }
+}
