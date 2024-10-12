@@ -2,6 +2,7 @@
 version: "3"
 
 tasks:
-  gen:
+  lint:
+    desc: Lint
     cmds:
-      - echo "Generating..."
+      - typos
