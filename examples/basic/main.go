@@ -1,16 +1,18 @@
 package main
 
 import (
-	"fmt"
+	"context"
 
 	"github.com/drornir/pizi-go/app"
 )
 
 func main() {
-	app := newApp()
-	fmt.Println(app)
-}
+	app, err := app.NewLocalLibSQLApp("./bin/db/")
+	if err != nil {
+		panic(err)
+	}
 
-func newApp() app.App {
-	return app.App{}
+	if err := app.Run(context.Background()); err != nil {
+		panic(err)
+	}
 }
