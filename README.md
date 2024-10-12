@@ -19,4 +19,4 @@ where a no-build JS stack is possible. (Thanks DHH for the talk!)
 - `valigo` for validation [on gh](https://github.com/Insei/valigo)
 - `gorilla` for web [gorilla.github.io](https://gorilla.github.io/)
 - `cobra` and `viper` for config [github.com/spf13/cobra](https://github.com/spf13/cobra)
-- `bubblecharm` for tty
+- `bubblecharm` for tty logger, and interactive cli [github.com/charmbracelet/bubbletea](https://github.com/charmbracelet/bubbletea)
