@@ -4,5 +4,16 @@ version: "3"
 tasks:
   lint:
     desc: Lint
+    deps:
+      - task: lint:typos
+      - task: lint:govet
+
+  lint:typos:
     cmds:
       - typos
+  lint:govet:
+    cmds:
+      - go vet ./...
+
+  tests:
+    desc: full testing
